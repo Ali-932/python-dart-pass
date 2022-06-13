@@ -1,0 +1,21 @@
+#Q:Write a program that takes an Integer (0 < x <= 10) then takes X integers one
+#after another, after inputting all those numbers, you should print 'N is odd' or 'N
+#is even' depending on each N that was received. Your whole program should be
+#implemented using a single function.
+print("please enter a value from 1 to 10")
+checker=False
+while(checker==False):
+    x=int (input())
+
+    if(x>=0 and x <=10):
+        checker=True
+    else:
+        print("enter a value from 1 to 10 only!!")
+    print("please enter ", x ," values")
+
+for i in range (x) :
+    y=int(input())
+    if(y%2==0):
+        print(y," is even")
+    else:
+        print(y," is odd")
