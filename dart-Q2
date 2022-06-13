@@ -1,0 +1,60 @@
+//1) Create an abstract class called "Animal" that has 2 abstract methods :
+// a) printName()
+// b) printSound()
+// 2) Create 3 classes "Dog", "Cat" and "Cow" that extends the Animal Class.
+// 3) Create a small test program (main).
+
+abstract class animal {
+
+  void printName();
+  void printSound();
+}
+class Cat extends animal{
+  @override
+  void printName()
+  {
+    print("Cat\n");
+  }
+
+  @override
+  void printSound()
+  {
+    print("Meow\n");
+  }
+}
+class dog extends animal{
+  @override
+  void printName()
+  {
+    print("Dog\n");
+  }
+
+  @override
+  void printSound()
+  {
+    print("HOHOHO\n");
+  }
+}
+class COW extends animal{
+  @override
+  void printName()
+  {
+    print("COW\n");
+  }
+
+  @override
+  void printSound()
+  {
+    print("ahooooooooo\n");
+  }
+}
+
+void main() {
+Cat c= new Cat();
+COW CO= new COW();
+dog D= new dog();
+c.printName();
+CO.printSound();
+D.printName();
+D.printSound();
+}
